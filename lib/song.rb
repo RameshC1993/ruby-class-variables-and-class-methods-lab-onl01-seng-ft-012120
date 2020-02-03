@@ -13,6 +13,6 @@ class Song
   end
   
   def self.name
-    @@name
+    return @@name
   end
 end
