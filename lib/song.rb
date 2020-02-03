@@ -8,12 +8,4 @@ class Song
     @genre = genre
     
   end
-  
-  def self.count
-    @@count
-  end
-  
-  def self.name
-    return @@name
-  end
 end
