@@ -18,6 +18,12 @@ class Song
   end
   
   def self.artists
-    @@artists
+    temp_arr = []
+    @@artists.each do |artist|
+     if !temp_arr.include?(artist)
+       temp_arr << artist
+     end
+    end
+    return temp_arr
   end
 end
