@@ -36,4 +36,16 @@ class Song
     end
     return temp_arr
   end
+  
+  def self.genre_count
+    temp_hash = {}
+    @@genres.each do |genre|
+      if temp_hash[genre]
+        temp_hash[genre] += 1 
+      else
+        temp_hash[genre] = 1 
+      end
+    end
+    return temp_hash
+  end
 end
