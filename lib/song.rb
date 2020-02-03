@@ -12,8 +12,7 @@ class Song
     @@count
   end
   
-  def self.genres 
-    @@genres = []
-    return @@genres.uniq
+  def self.name
+    @@name
   end
 end
