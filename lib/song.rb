@@ -26,4 +26,14 @@ class Song
     end
     return temp_arr
   end
+  
+  def self.genres 
+    temp_arr = []
+    @@genres.each do |genre|
+      if !temp_arr.include?(genre)
+        temp_arr << genre
+      end
+      return temp_arr
+    end
+  end
 end
