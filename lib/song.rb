@@ -33,7 +33,7 @@ class Song
       if !temp_arr.include?(genre)
         temp_arr << genre
       end
-      return temp_arr
     end
+    return temp_arr
   end
 end
